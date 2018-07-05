@@ -1,0 +1,19 @@
+/*========================================
+				GOOGLE MAPS
+==========================================*/
+#map_canvas {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 1080px;
+  height: 560px;
+  vertical-align: middle;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 10px;
+  background: transparent url(/static/img/jssor/loading.gif) no-repeat center center;
+}
+
+.gm-style img { max-width: none; }
+.gm-style label { width: auto; display: inline; }

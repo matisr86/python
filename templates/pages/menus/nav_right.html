@@ -1,0 +1,109 @@
+{% load i18n future pages_tags %}
+{% spaceless %}
+
+{% if page_branch_in_menu %}
+
+{% if branch_level == 0 %}
+
+    <ul class="nav navbar-nav navbar-right">
+        {% for page in page_branch %}
+            
+            {% if not page.content_model == "homepage" %}
+            
+                {% if not has_home and page.is_primary and forloop.first %}
+                    <li{% if on_home %} class="active"{% endif %} id="dropdown-menu-home">
+                        <a href="{% url 'home' %}">{% trans 'Home' %}</a>
+                    </li>
+                {% endif %}
+                
+                {% if page.content_model == "aboutnav" or page.content_model == "about" or page.content_model == "form" %}
+                    <li class="dropdown" id="{{ page.html_id }}">
+                        <a href="{{ page.get_absolute_url }}"
+                        
+                                {% if page.has_children_in_menu %}
+                                    class="dropdown-toggle disabled" data-toggle="dropdown"
+                                {% endif %}>{{ page.title }}<b></b></a>
+
+                        {% if page.aboutnav.use_scroll and page.content_model == "aboutnav" %}
+                            <ul class="nav-submenu pull-left">
+                                {% for i in page.aboutnav.navigation.all %}
+                                    <li class="text-left pull-left" id="id_{{i.title}}"><a href="{{page.get_absolute_url}}#s{{i.slug}}">{{i.title}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        
+                        {% if page.content_model == "form" %}
+                            <ul class="nav-submenu">
+                                {% for i in page.form.navigation.all %}
+                                    <li class="text-left" id="id_{{i.title}}"><a href="{{page.get_absolute_url}}#s{{i.slug}}">{{i.title}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        
+                        {% if page.about.use_scroll and page.content_model == "about" %}
+                            <ul class="nav-submenu">
+                                {% for i in page.about.navigation.all %}
+                                    <li class="text-left" id="id_{{i.title}}"><a href="{{page.get_absolute_url}}#s{{i.slug}}">{{i.title}}</a></li>
+                                {% endfor %}
+                                
+                            </ul>
+                        {% endif %}
+                        
+                        {% if page.has_children_in_menu %}{% page_menu page %}{% endif %}
+                    </li>
+                
+                {% elif page.in_menu %}
+                    <li class=" {% if page.has_children_in_menu %}dropdown{% endif %}
+                                {% if page.is_current_or_ascendant %}active{% endif %}"
+                        id="{{ page.html_id }}">
+                        
+                        <a href="{{ page.get_absolute_url }}"
+                        
+                        {% if page.has_children_in_menu %}
+                        class="dropdown-toggle disabled" data-toggle="dropdown"
+                        {% endif %}>
+                        
+                            {{ page.title }}
+                            
+                            {% if page.has_children_in_menu %}<b></b>{% endif %}
+                        </a>
+                        
+                        {% if page.has_children_in_menu %}{% page_menu page %}{% endif %}
+                    </li>
+                {% endif %}
+                
+            {% endif %}
+            
+        {% endfor %}
+        
+        <li>
+            <a href="#contact">{% trans 'CONTACT' %}</a>
+        </li>
+            
+    </ul>
+    
+{% else %}
+    
+    {% if page.portfolio.use_pagenav or page.galleries.use_pagenav %}
+    <ul class="dropdown-menu">
+        
+        {% for page in page_branch %}
+        
+            {% if page.in_menu %}
+            <li class="{% if page.has_children_in_menu %}dropdown-submenu{% endif %}
+                       {% if page.is_current_or_ascendant %}active{% endif %}"
+                id="{{ page.html_id }}">
+                <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+                {% if page.has_children_in_menu %}{% page_menu page %}{% endif %}
+            </li>
+            {% endif %}
+            
+        {% endfor %}
+        
+    </ul>
+    {% endif %}
+     
+{% endif %}
+
+{% endif %}
+{% endspaceless %}

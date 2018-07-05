@@ -1,0 +1,4 @@
+.inline-tabular input.vTextField, .inline-tabular textarea.vLargeTextField, .inline-tabular input.vFileBrowseField {
+    width: 140px!important;
+}
+

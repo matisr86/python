@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
+{% load pages_tags mezzanine_tags i18n future staticfiles %}
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
+<meta name="description" content="{% block meta_description %}{% endblock %}">
+<meta name="google-site-verification" content="49VMeUQR5YycFTIaXy3q7dPrbkZizXgKbmAsCdnCvcY" />
+<title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
+<link rel="shortcut icon" href="{% static 'img/favicon.png' %}" alt="logo">
+
+{% compress css %}
+<link rel="stylesheet" href="{% static 'mezzanine/css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/project/mezzanine_style.css' %}">
+<link rel="stylesheet" href="{% static 'css/project/project.css' %}">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'mezzanine/css/magnific-popup.css' %}">
+{% block extra_css %}
+{% endblock %}
+{% endcompress %}
+
+{% compress js %}
+<script src="{% static 'mezzanine/js/'|add:settings.JQUERY_FILENAME %}"></script>
+<script src="{% static 'mezzanine/js/magnific-popup.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/jquery.cookie.js' %}"></script>
+<script src="{% static 'mezzanine/js/magnific-popup.js' %}"></script>
+<script src="{% static 'js/jquery-ui-1.9.1.custom.min.js' %}"></script>
+<script src="{% static 'js/IE10-bug-remove.js' %}"></script>
+<script src="{% static 'js/project/jquery.parallax-1.1.3.js' %}"></script>
+{% block extra_js %}
+{% endblock %}
+{% endcompress %}
+
+{% block extra_head %}{% endblock %}
+</head>
+
+<body onLoad="window.scroll(0, 0)" id="{% block body_id %}body{% endblock %}">
+	<nav class="navbar navbar-fixed-top bc-white" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+					<i class="fa fa-bars fa-lg"></i>
+				</button>
+				<a class="navbar-brand" href="#top">
+					{% page_menu "pages/menus/nav_middle.html" %}
+				</a>
+			</div>
+			<div id="nav" class="collapse navbar-collapse">
+				{% page_menu "pages/menus/nav_left.html" %}
+			</div>
+		</div>
+	</nav>
+
+    {% block header %}{% endblock %}
+    {% block main %}{% endblock %}
+    {{error}}
+    
+    {% block footer %}{% endblock %}
+    {% include "includes/help_trans_text.html"%}
+    {% include "includes/footer_scripts.html" %}
+	<div id="cookies"></div>
+	
+</body>
+</html>

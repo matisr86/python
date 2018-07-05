@@ -1,0 +1,29 @@
+{% load i18n future staticfiles template_tags %}
+
+<div class="module" style="width:300px; text-align: center;">
+    <h2>{% trans 'Form Messages' %}</h2>
+    <h3>{% trans 'Last messages' %}</h3>
+    
+    <ul class="actionlist" style="margin:0;">
+        {% for z in form.all %}
+            <div style="border-top: 2px solid #e6e6e6; background-color:#f9f9f9;">{{z.entry_time}}</div>
+            {% for i in z.fields.all %}
+                <li style="text-align: left;">
+                {% if i.field_id == 1 %}
+                    {% trans 'From' %}: {{i.value}}
+                {% elif i.field_id == 2 %}
+                    {% trans 'E-mail'%}: {{i.value}}
+                {% else %}
+                    {% trans 'Contents'%}: {{i.value}}
+                {% endif %}
+                </li>
+            {% endfor %}
+        {% endfor %}
+    </ul>
+
+    <div style="text-align: left;">
+        {% for urls in get_absolute_url %}
+            <b><a href="{{urls.get_admin_url}}entries/" >{% trans 'More' %}({{urls}})>></a></b>
+        {% endfor %}
+    </div>
+</div>

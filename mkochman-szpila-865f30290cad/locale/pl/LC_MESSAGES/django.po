@@ -1,0 +1,1024 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-06 11:32+0100\n"
+"PO-Revision-Date: 2015-02-06 11:32+0124\n"
+"Last-Translator:   <dynamikacja@admin.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Translated-Using: django-rosetta 0.7.4\n"
+
+#: admin.py:121
+msgid "Email description"
+msgstr "Opis email"
+
+#: admin.py:127
+msgid "Email"
+msgstr "Email"
+
+#: models.py:17
+msgid "Color"
+msgstr "Kolor"
+
+#: models.py:18
+msgid "Color HEX code. Click on input to display Color picker."
+msgstr "Kod koloru HEX. Naciśnij pole, w celu wyswietlenia Color Picker'a."
+
+#: models.py:33
+msgid "Banner"
+msgstr "Baner"
+
+#: models.py:34
+msgid "Background_img"
+msgstr "Zdjęcie tła"
+
+#: models.py:37
+msgid "Banner heading"
+msgstr "Nagłówek baneru"
+
+#: models.py:39
+msgid "Banner description"
+msgstr "Opis baneru"
+
+#: models.py:43 models.py:44
+msgid "Banner Details"
+msgstr "Szczegóły baneru"
+
+#: models.py:53 models.py:60 models.py:61
+msgid "Banner images"
+msgstr "Zdjecia baneru"
+
+#: models.py:54 models.py:93 models.py:134 models.py:175
+msgid "Img"
+msgstr "Zdjęcie"
+
+#: models.py:68 models.py:77 models.py:109 models.py:118 models.py:149
+#: models.py:158 models.py:190 models.py:199
+msgid "None"
+msgstr "Brak"
+
+#: models.py:74 models.py:115 models.py:155 models.py:196
+msgid "Image name"
+msgstr "Nazwa zdjęcia"
+
+#: models.py:83 models.py:124 models.py:164 models.py:205
+msgid "Date"
+msgstr "Data"
+
+#: models.py:92 models.py:102 models.py:103
+msgid "What we do"
+msgstr "Co robimy"
+
+#: models.py:96 models.py:137
+msgid "Main title"
+msgstr "Główny tytuł"
+
+#: models.py:98 models.py:180
+msgid "Description"
+msgstr "Opis"
+
+#: models.py:133 models.py:143
+msgid "Realisations"
+msgstr "Realizacje"
+
+#: models.py:142
+msgid "Realisation"
+msgstr "Realizacja"
+
+#: models.py:173 models.py:183 models.py:184
+msgid "About"
+msgstr "O mnie"
+
+#: models.py:174
+msgid "Main description"
+msgstr "Główny opis"
+
+#: models.py:178
+msgid "Title"
+msgstr "Tytuł"
+
+#: models.py:214 models.py:225 models.py:226
+msgid "Footer"
+msgstr "Stopka"
+
+#: models.py:215
+msgid "Adress content"
+msgstr "Zawartość adresu"
+
+#: models.py:217
+msgid "Map"
+msgstr "Mapa"
+
+#: models.py:222
+msgid "Copyright"
+msgstr "Prawa autorskie"
+
+#: models.py:246
+msgid "Socials"
+msgstr "Media Społecznościowe"
+
+#: models.py:247
+msgid "Columns"
+msgstr "Kolumny"
+
+#: models.py:249
+msgid "Social media columns"
+msgstr "Kolumny dla mediów społecznościowych"
+
+#: models.py:250
+msgid "Link"
+msgstr "Link"
+
+#: models.py:251
+msgid "Optional link for social media"
+msgstr "Opcjonalny link dla mediów społecznościowych"
+
+#: models.py:252
+msgid "Display social media in footer"
+msgstr "Wyświetl media społecznościowe w stopce"
+
+#: models.py:254
+msgid "Display social media in header"
+msgstr "Wyświetl media społecznościowe w nagłówku"
+
+#: models.py:258 models.py:259
+msgid "Social Media"
+msgstr "Media Społecznościowe"
+
+#: settings.py:86
+msgid "English"
+msgstr "Angielski"
+
+#: settings.py:87
+msgid "Polish"
+msgstr "Polski"
+
+#: templates/errors/404.html:6 templates/errors/404.html.py:10
+#: templates/errors/404.html:15
+msgid "Page not found"
+msgstr "Nie znaleziono strony"
+
+#: templates/errors/404.html:16
+msgid "The page you requested does not exist."
+msgstr "Strona nie istnieje"
+
+#: templates/errors/500.html:6 templates/errors/500.html.py:10
+#: templates/errors/500.html:15
+msgid "Error"
+msgstr "Błąd"
+
+#: templates/errors/500.html:16
+msgid "Sorry, an error occurred."
+msgstr "Wystąpił błąd, przepraszamy"
+
+#: templates/includes/form_errors.html:8
+msgid "Please enter valid data."
+msgstr "Proszę wprowadzić poprawne dane."
+
+#: templates/includes/help_trans_text.html:4
+msgid "This site uses cookies."
+msgstr "Na stronie internetowej wykorzystywane są pliki cookies."
+
+#: templates/includes/help_trans_text.html:7
+msgid ""
+"By using the website without changing the browser settings you consent to "
+"the use of cookies."
+msgstr ""
+"Korzystając z serwisu internetowego bez zmiany ustawień przeglądarki "
+"wyrażasz zgodę na stosowanie plików cookies."
+
+#: templates/includes/help_trans_text.html:10
+msgid "I accept cookies policy"
+msgstr "Akceptuje politykę cookies"
+
+#: templates/includes/help_trans_text.html:13
+msgid "Add the application documents"
+msgstr "Dodaj dokumenty aplikacyjne"
+
+#: templates/pages/form.html:252 templates/pages/admin/form_mails.html:26
+msgid "More"
+msgstr "Więcej"
+
+#: templates/pages/form.html:255
+msgid "Less"
+msgstr "Mniej"
+
+#: templates/pages/form.html:303
+msgid "About us"
+msgstr "O nas"
+
+#: templates/pages/form.html:337
+msgid "Contact with us"
+msgstr "Skontaktuj się"
+
+#: templates/pages/form.html:352
+msgid "Contact form"
+msgstr "Formularz kontaktowy"
+
+#: templates/pages/form.html:367
+msgid "Return"
+msgstr "Powrót"
+
+#: templates/pages/admin/form_mails.html:4
+msgid "Form Messages"
+msgstr "Wiadomości formularza"
+
+#: templates/pages/admin/form_mails.html:5
+msgid "Last messages"
+msgstr "Ostatnie waiadomości"
+
+#: templates/pages/admin/form_mails.html:13
+msgid "From"
+msgstr "Od"
+
+#: templates/pages/admin/form_mails.html:15
+msgid "E-mail"
+msgstr "Email"
+
+#: templates/pages/admin/form_mails.html:17
+msgid "Contents"
+msgstr "Treść"
+
+#: templates/pages/menus/admin.html:31
+msgid "Add"
+msgstr "Dodaj"
+
+#: templates/pages/menus/breadcrumb.html:4
+#: templates/pages/menus/breadcrumb.html:10
+#: templates/pages/menus/dropdown.html:10
+#: templates/pages/menus/footer_tree.html:11
+#: templates/pages/menus/mobile.html:10
+#: templates/pages/menus/nav_right.html:15
+#: templates/pages/menus/primary.html:8 templates/pages/menus/tree.html:9
+msgid "Home"
+msgstr "Strona Główna"
+
+#: templates/pages/menus/nav_left.html:4
+msgid "about"
+msgstr "o nas"
+
+#: templates/pages/menus/nav_left.html:5
+msgid "what we do"
+msgstr "co robimy"
+
+#: templates/pages/menus/nav_left.html:6
+msgid "realisations"
+msgstr "realizacje"
+
+#: templates/pages/menus/nav_left.html:7
+msgid "contact"
+msgstr "kontakt"
+
+#: templates/pages/menus/nav_right.html:80
+msgid "CONTACT"
+msgstr "KONTAKT"
+
+#~ msgid "File"
+#~ msgstr "Plik"
+
+#~ msgid "Show more"
+#~ msgstr "Więcej"
+
+#~ msgid "Show less"
+#~ msgstr "Mniej"
+
+#~ msgid "Banner & Navigation"
+#~ msgstr "Baner & Nawigacja"
+
+#~ msgid "Scope of services"
+#~ msgstr "Zakres usług"
+
+#~ msgid "Appointments"
+#~ msgstr "Wizyty"
+
+#~ msgid "Price list background"
+#~ msgstr "Tło cennika"
+
+#~ msgid "Footer title"
+#~ msgstr "Tytuł stopki"
+
+#~ msgid "Address"
+#~ msgstr "Adres"
+
+#~ msgid "Phone number in navigation"
+#~ msgstr "Numer telefonu w nawigacji"
+
+#~ msgid "Company"
+#~ msgstr "Firma"
+
+#~ msgid "Text above companies logo."
+#~ msgstr "Tekst nad logami firm."
+
+#~ msgid "About img"
+#~ msgstr "Zdjęcie"
+
+#~ msgid "Scope of services text img"
+#~ msgstr "Zakres usług - zdjęcie z tekstem"
+
+#~ msgid "Price list image"
+#~ msgstr "Zdjęcie cennika"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Text above 'znanylekarz.pl' widget."
+#~ msgstr "Tekst nad widget'em 'znanylekarz.pl'."
+
+#~ msgid "Text under 'znanylekarz.pl' widget."
+#~ msgstr "Tekst pod widget'em 'znanylekarz.pl'."
+
+#~ msgid "Home page"
+#~ msgstr "Strona Główna"
+
+#~ msgid "Home pages"
+#~ msgstr "Strony Główne"
+
+#~ msgid "PriceList"
+#~ msgstr "Cennik"
+
+#~ msgid "Price"
+#~ msgstr "Cena"
+
+#~ msgid "Currency"
+#~ msgstr "Waluta"
+
+#~ msgid "Price List"
+#~ msgstr "Cennik"
+
+#~ msgid "Methods"
+#~ msgstr "Metody"
+
+#~ msgid "Certificate"
+#~ msgstr "Certyfikat"
+
+#~ msgid "Therapeutic methods (image)"
+#~ msgstr "Metody terapeutyczne (zdjęcie)"
+
+#~ msgid "Therapeutic methods (images)"
+#~ msgstr "Metody terapeutyczne (zdjęcia)"
+
+#~ msgid "Subtitle"
+#~ msgstr "Podtytuł"
+
+#~ msgid "Therapeutic methods (text)"
+#~ msgstr "Metody terapeutyczne (tekst)"
+
+#~ msgid "Therapeutic methods (texts)"
+#~ msgstr "Metody terapeutyczne (teksty)"
+
+#~ msgid "Hold down 'Ctrl' to select more than one."
+#~ msgstr ""
+#~ "Przytrzymaj wciśnięty klawisz \"Ctrl\" aby zaznaczyć więcej niż jeden wybór."
+
+#~ msgid "Certificates"
+#~ msgstr "Certyfikaty"
+
+#~ msgid "Adress title"
+#~ msgstr "Tytuł adresu"
+
+#~ msgid "Display google map"
+#~ msgstr "Wyświetl mapę google"
+
+#~ msgid "Street"
+#~ msgstr "Ulica"
+
+#~ msgid "City"
+#~ msgstr "Miasto"
+
+#~ msgid "Position width"
+#~ msgstr "Położenie geograficzne (szerokość)"
+
+#~ msgid "Position height"
+#~ msgstr "Położenie geograficzne (wysokość)"
+
+#~ msgid "Map zoom"
+#~ msgstr "Zoomowanie mapy"
+
+#~ msgid "Value for google map zooming."
+#~ msgstr "Wartość przybliżenia google map. "
+
+#~ msgid "Google Maps"
+#~ msgstr "Mapy Google"
+
+#~ msgid "Display"
+#~ msgstr "Wyświetl"
+
+#~ msgid "Doctor"
+#~ msgstr "Doktor"
+
+#~ msgid "Type"
+#~ msgstr "Rodzaj"
+
+#~ msgid "Opinion"
+#~ msgstr "Opinia"
+
+#~ msgid "Well-Known Doctor"
+#~ msgstr "Znany lekarz"
+
+#~ msgid "Media Library"
+#~ msgstr "Biblioteka mediów"
+
+#~ msgid "Site Configuration"
+#~ msgstr "Konfiguracja strony"
+
+#~ msgid "About event"
+#~ msgstr "Informacje o wydarzeniu"
+
+#~ msgid "Categories main"
+#~ msgstr "Kategorie"
+
+#~ msgid "! Only categories with url 'articles' & 'news' 'll be displayed"
+#~ msgstr "! Tylko kategorie ze ścieżką url 'articles' i 'news' będą wyswietlane"
+
+#~ msgid "Use scroll page"
+#~ msgstr "Włącz nawigację po stronie"
+
+#~ msgid "Info"
+#~ msgstr "Informacje"
+
+#~ msgid "Text fields"
+#~ msgstr "Pola tekstowe"
+
+#~ msgid "Companies"
+#~ msgstr "Firmy"
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "Short description"
+#~ msgstr "Krótki opis"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorie"
+
+#~ msgid "Article/News"
+#~ msgstr "Artykuł/News"
+
+#~ msgid "Category"
+#~ msgstr "Kategoria"
+
+#~ msgid "Featured Image"
+#~ msgstr "Główne Zdjęcie"
+
+#~ msgid "Banner Heading"
+#~ msgstr "Nagłówek baneru"
+
+#~ msgid "Cycle"
+#~ msgstr "Cykl"
+
+#~ msgid "Page"
+#~ msgstr "Strona"
+
+#~ msgid "Worker"
+#~ msgstr "Pracownik"
+
+#~ msgid "Workers"
+#~ msgstr "Pracownicy"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Scroll Page"
+#~ msgstr "Nawigacja po stronie"
+
+#~ msgid "Search & Selection"
+#~ msgstr "Wyszukiwanie i Selekcja"
+
+#~ msgid "Quick Search"
+#~ msgstr "Szybkie Wyszukiwanie"
+
+#~ msgid "Direct Search"
+#~ msgstr "Wyszukiwanie Bezpośrednie"
+
+#~ msgid "Assessment / Development Center"
+#~ msgstr "Oszacowanie / Centrum Rozwoju"
+
+#~ msgid "more"
+#~ msgstr "więcej"
+
+#~ msgid "Dictionary"
+#~ msgstr "Słownik"
+
+#~ msgid "NEWS"
+#~ msgstr "NEWS"
+
+#~ msgid "ARTICLES"
+#~ msgstr "ARTYKUŁY"
+
+#~ msgid "APPLY"
+#~ msgstr "APLIKUJ"
+
+#~ msgid "Applicate again"
+#~ msgstr "Aplikuj ponownie"
+
+#~ msgid "preview"
+#~ msgstr "poprzedni"
+
+#~ msgid "next"
+#~ msgstr "następny"
+
+#~ msgid "Two columns"
+#~ msgstr "Dwie kolumny"
+
+#~ msgid "Three columns"
+#~ msgstr "Trzy kolumny"
+
+#~ msgid "Four Columns"
+#~ msgstr "Cztery kolumny"
+
+#~ msgid "Six Columns"
+#~ msgstr "Sześć kolumn"
+
+#~ msgid "One column"
+#~ msgstr "Jedna kolumna"
+
+#~ msgid "left"
+#~ msgstr "lewa strona"
+
+#~ msgid "center"
+#~ msgstr "środek"
+
+#~ msgid "right"
+#~ msgstr "prawa strona"
+
+#~ msgid "Heading"
+#~ msgstr "Nagłówek"
+
+#~ msgid "The heading"
+#~ msgstr "Nagłówek"
+
+#~ msgid "Subheading"
+#~ msgstr "Podtytuł"
+
+#~ msgid "The subheading just below the heading"
+#~ msgstr "Podtytuł znajdujący się pod nagłówkiem"
+
+#~ msgid "Display current publication"
+#~ msgstr "Wyświetl aktualną publikację"
+
+#~ msgid "Display previous publication"
+#~ msgstr "Wyświetl poprzednie publikacje"
+
+#~ msgid "Publications columns"
+#~ msgstr "Kolumny publikacji"
+
+#~ msgid "Columns for previous publications"
+#~ msgstr "Układ kolumn dla poprzednich publikacji"
+
+#~ msgid "Publication account"
+#~ msgstr "Konto publikacji"
+
+#~ msgid ""
+#~ "If selected items from this portfolio will be featured on the home page."
+#~ msgstr "Wybrane elementy z portfolio zostaną wyświetlona na głównej stronie"
+
+#~ msgid "Portfolio heading"
+#~ msgstr "Nagłówek portfolio"
+
+#~ msgid "The portfolio heading"
+#~ msgstr "Nagłówek portfolio"
+
+#~ msgid "Portfolio columns"
+#~ msgstr "Kolumny dla portfolio"
+
+#~ msgid "Columns for portfolio."
+#~ msgstr "Columny dla portfolio"
+
+#~ msgid "Contetnt heading"
+#~ msgstr "Zawartość nagłówka"
+
+#~ msgid "Home page columns"
+#~ msgstr "Kolumny dla strony głównej"
+
+#~ msgid "Columns for images."
+#~ msgstr "Kolumny dla zdjęć"
+
+#~ msgid "Slides"
+#~ msgstr "Slajdy"
+
+#~ msgid "Slider"
+#~ msgstr "Slajdy"
+
+#~ msgid "Text position"
+#~ msgstr "Pozycja tekstu"
+
+#~ msgid "Text position on gallery"
+#~ msgstr "Pozycja tekstu w galerii"
+
+#~ msgid "Optional, if provided clicking the image will go here"
+#~ msgstr "Opcjonalnie"
+
+#~ msgid "Gallery Home"
+#~ msgstr "Galeria Strona Główna"
+
+#~ msgid "Phone title"
+#~ msgstr "Tytuł telefon"
+
+#~ msgid "Phone content"
+#~ msgstr "Zawartość telefon"
+
+#~ msgid "Email content"
+#~ msgstr "Zawartość Email"
+
+#~ msgid "Display FaceBook Widget"
+#~ msgstr "Wyświetl FaceBook Widget"
+
+#~ msgid "Facebook link"
+#~ msgstr "Facebook link"
+
+#~ msgid "Link for FaceBook widget"
+#~ msgstr "Link dla FaceBook Widget"
+
+#~ msgid "Widget FB"
+#~ msgstr "Widget FB"
+
+#~ msgid "Columns for images"
+#~ msgstr "Kolumny dla zdjęć"
+
+#~ msgid "Display Calendar"
+#~ msgstr "Wyświetl Kalendarz"
+
+#~ msgid "Articles"
+#~ msgstr "Artykuły"
+
+#~ msgid "Href"
+#~ msgstr "Href"
+
+#~ msgid "A link to the finished project (optional)"
+#~ msgstr "Link do ukończonego projektu (opcjonalnie)"
+
+#~ msgid "Event from"
+#~ msgstr "Wydarzenie od"
+
+#~ msgid "Start the event from this date"
+#~ msgstr "Wydarzenie zostaje rozpoczęte od wprowadzonej daty"
+
+#~ msgid "Event to"
+#~ msgstr "Wydarzenie do"
+
+#~ msgid "End the event from this date"
+#~ msgstr "Wydarzenie zostaje zakończone od wprowadzonej daty"
+
+#~ msgid "Thumbnail of the image"
+#~ msgstr "Miniaturka zdjęcia"
+
+#~ msgid "Portfolio Slider"
+#~ msgstr "Slider Portfolio"
+
+#~ msgid "Gallery Portfolio"
+#~ msgstr "Galeria Portfolio"
+
+#~ msgid "Development"
+#~ msgstr "Rozwój"
+
+#~ msgid "About Slider"
+#~ msgstr "Slider"
+
+#~ msgid "Gallery About"
+#~ msgstr "Galeria"
+
+#~ msgid "Galleries"
+#~ msgstr "Galerie"
+
+#~ msgid "Gallery Slider"
+#~ msgstr "Slider Galerii"
+
+#~ msgid "Gallery"
+#~ msgstr "Galeria"
+
+#~ msgid "AboutNav Slider"
+#~ msgstr "Slider"
+
+#~ msgid "Gallery AboutNav"
+#~ msgstr "Główna galeria"
+
+#~ msgid "Images side"
+#~ msgstr "Zdjęcia poboczne"
+
+#~ msgid "Gallery Side AboutNav"
+#~ msgstr "Poboczna galeria"
+
+#~ msgid "Display slider"
+#~ msgstr "Wyświetl Slady"
+
+#~ msgid "Display main gallery"
+#~ msgstr "Wyświetl główna galerię"
+
+#~ msgid "Display side gallery"
+#~ msgstr "Wyświetl poboczną galerię"
+
+#~ msgid "Display google maps"
+#~ msgstr "Wyświetl mapę google"
+
+#~ msgid "Form Main"
+#~ msgstr "Zarządzanie formularzem"
+
+#~ msgid "Slide"
+#~ msgstr "Slajd"
+
+#~ msgid "Gallery Side"
+#~ msgstr "Poboczna galeria"
+
+#~ msgid "Posted by"
+#~ msgstr "Wystawiony przez"
+
+#~ msgid "%(sometime)s ago"
+#~ msgstr "%(sometime)s ago"
+
+#~ msgid "%(comments_count)s comment"
+#~ msgid_plural "%(comments_count)s comments"
+#~ msgstr[0] "%(comments_count)s comment"
+#~ msgstr[1] "%(comments_count)s comments"
+
+#~ msgid "Tags"
+#~ msgstr "Tagi"
+
+#~ msgid "Share on Twitter"
+#~ msgstr "Udostępnij na Twiterze"
+
+#~ msgid "Share on Facebook"
+#~ msgstr "Udostępnij na Facebooku"
+
+#~ msgid "Related posts"
+#~ msgstr "Powiązane posty"
+
+#~ msgid "Blog"
+#~ msgstr "Blog"
+
+#~ msgid "Tag:"
+#~ msgstr "Tag:"
+
+#~ msgid "Category:"
+#~ msgstr "Kategoria:"
+
+#~ msgid "Author:"
+#~ msgstr "Autor:"
+
+#~ msgid "Viewing posts tagged"
+#~ msgstr "Przeglądanie oznaczonych wiadomości"
+
+#~ msgid "Viewing posts for the category"
+#~ msgstr "Przeglądanie postów dla kategorii"
+
+#~ msgid "Viewing posts from"
+#~ msgstr "Przeglądanie postów od"
+
+#~ msgid "Viewing posts by"
+#~ msgstr "Przeglądanie postów przez"
+
+#~ msgid "in"
+#~ msgstr "w"
+
+#~ msgid "read more"
+#~ msgstr "czytaj więcej"
+
+#~ msgid "Recent Posts"
+#~ msgstr "Ostatnie posty"
+
+#~ msgid "Archive"
+#~ msgstr "Archiwum"
+
+#~ msgid "Authors"
+#~ msgstr "Autorzy"
+
+#~ msgid "Feeds"
+#~ msgstr "Datki"
+
+#~ msgid "RSS"
+#~ msgstr "RSS"
+
+#~ msgid "Atom"
+#~ msgstr "Atom"
+
+#~ msgid "A new comment has been posted on"
+#~ msgstr "Nowy komentarz został wystawiony na"
+
+#~ msgid ""
+#~ "\n"
+#~ "    At %(submit_date)s %(user_name)s wrote:\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "At %(submit_date)s %(user_name)s wrote:"
+
+#~ msgid ""
+#~ "\n"
+#~ "At %(submit_date)s %(user_name)s wrote:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "At %(submit_date)s %(user_name)s wrote:\n"
+
+#~ msgid "Reply"
+#~ msgstr "Odpowiedz"
+
+#~ msgid "Comment deleted"
+#~ msgstr "Usunięto komentarz"
+
+#~ msgid "Comment awaiting approval"
+#~ msgstr "Komentarz oczekuje na zatwierdzenie"
+
+#~ msgid "There are currently no comments"
+#~ msgstr "Obecnie nie ma żadnych komentarzy"
+
+#~ msgid "New Comment"
+#~ msgstr "Nowy Komentarz"
+
+#~ msgid "Comment"
+#~ msgstr "Komentarz"
+
+#~ msgid "Current rating"
+#~ msgstr "Aktualna ocena"
+
+#~ msgid "Currently unrated"
+#~ msgstr "Aktualnie nieocenione"
+
+#~ msgid "Rate"
+#~ msgstr "Oceń"
+
+#~ msgid "None available"
+#~ msgstr "Niedostępne"
+
+#~ msgid "See"
+#~ msgstr "Zobacz"
+
+#~ msgid "During"
+#~ msgstr "W trakcie"
+
+#~ msgid "Start of events"
+#~ msgstr "Rozpoczęcie wydarzenia"
+
+#~ msgid "End date"
+#~ msgstr "Data zakończenia"
+
+#~ msgid "Completed"
+#~ msgstr "Zakończono"
+
+#~ msgid "Not started"
+#~ msgstr "Nie rozpoczeto"
+
+#~ msgid "Sunday"
+#~ msgstr "Niedziela"
+
+#~ msgid "Monday"
+#~ msgstr "Poniedziałek"
+
+#~ msgid "Tuesday"
+#~ msgstr "Wtorek"
+
+#~ msgid "Wednesday"
+#~ msgstr "Środa"
+
+#~ msgid "Thursday"
+#~ msgstr "Czwartek"
+
+#~ msgid "Friday"
+#~ msgstr "Piątek"
+
+#~ msgid "Saturday"
+#~ msgstr "Sobota"
+
+#~ msgid "Sun"
+#~ msgstr "Niedz"
+
+#~ msgid "Mon"
+#~ msgstr "Po"
+
+#~ msgid "Tue"
+#~ msgstr "Wt"
+
+#~ msgid "Wed"
+#~ msgstr "Śr"
+
+#~ msgid "Thu"
+#~ msgstr "Czw"
+
+#~ msgid "Fri"
+#~ msgstr "Pt"
+
+#~ msgid "Sat"
+#~ msgstr "Sob"
+
+#~ msgid "January"
+#~ msgstr "Styczeń"
+
+#~ msgid "February"
+#~ msgstr "Luty"
+
+#~ msgid "March"
+#~ msgstr "Marzec"
+
+#~ msgid "April"
+#~ msgstr "Kwiecień"
+
+#~ msgid "June"
+#~ msgstr "Czerwiec"
+
+#~ msgid "July"
+#~ msgstr "Lipiec"
+
+#~ msgid "August"
+#~ msgstr "Sierpień"
+
+#~ msgid "September"
+#~ msgstr "Wrzesień"
+
+#~ msgid "October"
+#~ msgstr "Październik"
+
+#~ msgid "November"
+#~ msgstr "Listopad"
+
+#~ msgid "December"
+#~ msgstr "Grudzień"
+
+#~ msgid "Jan"
+#~ msgstr "Sty"
+
+#~ msgid "Feb"
+#~ msgstr "Lut"
+
+#~ msgid "Mar"
+#~ msgstr "Mar"
+
+#~ msgid "Apr"
+#~ msgstr "Kwi"
+
+#~ msgid "Jun"
+#~ msgstr "Cze"
+
+#~ msgid "Jul"
+#~ msgstr "Lip"
+
+#~ msgid "Aug"
+#~ msgstr "Sie"
+
+#~ msgid "Sep"
+#~ msgstr "Wrz"
+
+#~ msgid "Oct"
+#~ msgstr "Paz"
+
+#~ msgid "Nov"
+#~ msgstr "Lis"
+
+#~ msgid "Dec"
+#~ msgstr "Gru"
+
+#~ msgid "Recent Tweets"
+#~ msgstr "Ostatnie Tweety"
+
+#~ msgid "Manage site"
+#~ msgstr "Zarządzanie stroną"
+
+#~ msgid "Form main"
+#~ msgstr "Zarządzanie formularzem"
+
+#~ msgid "Please correct the errors below."
+#~ msgstr "Proszę poprawic poniższe błędy."
+
+#~ msgid "Event options"
+#~ msgstr "Opcje wydarzenia"
+
+#~ msgid "Phone"
+#~ msgstr "Telefon"
+
+#~ msgid "Main footer title"
+#~ msgstr "Główny tytuł stopki"
+
+#~ msgid "Article"
+#~ msgstr "Artykuł"
+
+#~ msgid "Portfolio"
+#~ msgstr "Portfolio"
+
+#~ msgid "Portfolios"
+#~ msgstr "Portfolia"
+
+#~ msgid "Portfolio item"
+#~ msgstr "Portfolio (element)"
+
+#~ msgid "Portfolio items"
+#~ msgstr "Elementy Portfolio"
+
+#~ msgid "AboutNav"
+#~ msgstr "O stronie (z nawigacją)"
+
+#~ msgid "Current issue"
+#~ msgstr "Aktualne wydanie"
+
+#~ msgid "Previous issues"
+#~ msgstr "Poprzednie wydania"
+
+#~ msgid "All"
+#~ msgstr "Wszystkie"

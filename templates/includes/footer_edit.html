@@ -1,0 +1,111 @@
+{% load pages_tags mezzanine_tags staticfiles %}
+{% get_footer_content as footer %}
+{% get_map_content as mapgoogle %}
+{% load i18n future%}
+{% spaceless %}
+
+    <footer id="kontakt" class="kontakt bc-gray pt-20">
+        <div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+                    {% if footer.footer_title %}
+                        {% editable footer.footer_title %}
+                        <h2 class="c-neworange">{{ footer.footer_title }}</h2>
+                        {% endeditable %}
+                    {% endif %}
+				</div>
+			</div>
+<!--
+			<div class="row">
+				<div class="col-sm-7 col-md-7">
+					<div class="hidden">
+                            <div id="city">
+                                <p>{{ mapgoogle.city }}</p>
+                            </div>
+                             <div id="street">
+                                <p>{{ mapgoogle.street }}</p>
+                            </div>
+                             <div id="title">
+                                <p>{{ mapgoogle.title }}</p>
+                            </div>
+                             <div id="position_width">
+                                <p>{{ mapgoogle.position_width }}</p>
+                            </div>
+                            <div id="position_height">
+                                <p>{{ mapgoogle.position_height }}</p>
+                            </div>
+                            <div id="on_off">
+                                <p>{{ mapgoogle.googlemap }}</p>
+                            </div>
+                            <div id="g_zoom">
+                                <p>{{ mapgoogle.map_zoom }}</p>
+                            </div>
+                        </div>
+                        
+                        {% if  mapgoogle.googlemap == True %}
+                            <div id="map_canvas"></div>
+                        {% endif %}
+				</div>
+-->
+				<div class="col-sm-5 col-md-5 text-center">
+					<div>
+						<img src="{% static 'img/anatomia-ruchu-kontakt.png' %}" alt="anatomia-ruchu-kontakt">
+					</div>
+					<div class="pt-20">
+                        {% if footer.adress_title or footer.adress_content %}
+                            {% editable footer.adress_title footer.adress_content %}
+                            <p>{{ footer.adress_title }}</p>
+                            {{ footer.adress_content|richtext_filters|safe }}
+                            {% endeditable %}
+                        {% endif %}
+					</div>
+					<div class="pt-20 loader">
+						<a id="zl-url" class="zl-url" href="http://www.znanylekarz.pl/slawomir-godzina/fizjoterapeuta/wroclaw" rel="nofollow" data-zlw-doctor="slawomir-godzina" data-zlw-type="big" data-zlw-opinion="false">Sławomir Godzina - ZnanyLekarz.pl</a>
+					</div>
+					<div class="clearfix pt-20">
+						<div class="pull-left">
+                            
+                            {% for social in footer.socials.all %}
+                                {% if social.columns == '1' and social.footer_social == True %}
+                                    <a class="c-orange" href="{% if social.link %}{{ social.link }}{% endif %}" target="_blank">
+                                        <i class="fa fa-facebook-square fa-lg"></i> Anatomia Ruchu
+                                    </a>
+                                {% endif %}
+                                {% if social.columns == '2' and social.footer_social == True %}
+                                    <a class="c-orange" href="{% if social.link %}{{ social.link }}{% endif %}" target="_blank">
+                                        <i class="fa fa-twitter fa-fw" ></i>
+                                    </a>
+                                {% endif %}
+                                {% if social.columns == '3' and social.footer_social == True %}
+                                    <a class="c-orange" href="{% if social.link %}{{ social.link }}{% endif %}" target="_blank">
+                                        <i class="fa fa-pinterest fa-fw"></i>
+                                    </a>
+                                {% endif %}
+                                {% if social.columns == '4' and social.footer_social == True %}
+                                    <a class="c-orange" href="{% if social.link %}{{ social.link }}{% endif %}" target="_blank">
+                                        <i class="fa fa-instagram fa-fw"></i>
+                                    </a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 text-center copy">
+                    {% if footer.copyright %}
+                        <hr>            
+                        {% editable footer.copyright %}
+                        {{ footer.copyright|richtext_filters|safe}}
+                        {% endeditable %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    
+{% endspaceless %}

@@ -1,0 +1,10 @@
+syntax: glob
+*.pyc
+*.pyo
+.DS_Store
+.coverage
+
+syntax: regexp
+^static/media
+^forms
+^static/CACHE

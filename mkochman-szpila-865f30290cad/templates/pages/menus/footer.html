@@ -1,0 +1,55 @@
+{% load i18n future pages_tags %}
+{% spaceless %}
+{% if page_branch_in_menu %}
+
+{% if branch_level == 0 %}
+
+    {% for page in page_branch %}
+        {% if not page.content_model == "homepage" %}
+            <div class=
+            "{% if forloop.counter == 2 %}
+                col-xs-offset-0 col-md-offset-0 col-sm-offset-0 col-lg-offset-1 col-xs-3 col-md-4 col-sm-6 col-lg-4 text-right
+            {% elif forloop.counter == 4 %}
+                col-xs-3 col-md-3 col-sm-4 col-lg-2
+            {% else %}
+                col-xs-2 col-md-2 col-sm-4 col-lg-2
+            {% endif %}
+            pl-0 pr-0 mr-5">
+                {% if page.is_primary %}
+                    
+                    {% if page.in_menu %}
+                        <ul class="list-unstyled">
+                    {% endif %}
+                {% endif %}
+
+                {% if page.in_menu %}
+                    {% if forloop.first and not page.parent.in_menu and not page.is_primary %}
+                        <ul class="list-unstyled">
+                    {% endif %}
+                    <li {% if page.is_current_or_ascendant %}class="active"{% endif %}
+                        id="footer-menu-{{ page.html_id }}">
+                        <a href="{{ page.get_absolute_url }}">{{ page.title }}</a></li>
+                {% endif %}
+
+                {% if page.in_menu and page.has_children_in_menu %}{% page_menu page %}{% endif %}
+
+                {% if page.in_menu %}
+                    {% if forloop.first and not page.parent.in_menu and not page.is_primary %}
+                        </li></ul>
+                    {% endif %}
+                {% endif %}
+
+                {% if page.is_primary %}
+                    {% if page.in_menu %}
+                        </ul>
+                    {% endif %}
+                    
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endfor %}
+
+{% endif %}
+
+{% endif %}
+{% endspaceless %}

@@ -1,0 +1,86 @@
+/*========================================
+          WIDGET FB
+==========================================*/
+
+.transition {
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-ms-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: all;
+	-moz-transition-property: all;
+	-ms-transition-property: all;
+	-o-transition-property: all;
+    transition-property: all;
+}
+
+.widget {
+	position:fixed; 
+	top:60px; 
+	right:0px; 
+	z-index:1040; 
+	cursor:pointer;
+}
+
+.widget:hover .detail {
+    width: 300px;
+}
+
+.widget:hover .arrow {
+    margin-right: 300px;
+}
+
+.widget .detail {
+	background-color: #edeff4;
+    right: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+.widget .detail span {
+    display: block;
+    overflow: hidden;
+}
+
+.widget .arrowB {
+    display: block;
+    overflow: hidden;
+    color: #4397AF;
+	background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px;
+}
+
+/*========================================
+          WIDGET FB CLICK
+==========================================*/
+
+.widgetClick {
+	position:fixed; 
+	top:394px; 
+	right:-86px; 
+	z-index:1040; 
+	cursor:pointer;
+}
+
+.widgetClick .arrowB {
+    display: block;
+    overflow: hidden;
+    color: #FFFFFF;
+	background-color: #ef7f1b;
+    border: 1px groove #cccccc;
+    padding: 10px;
+    -webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}

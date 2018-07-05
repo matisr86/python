@@ -1,0 +1,6 @@
+Mezzanine==3.1.10
+django-rosetta
+pep8
+django-modeltranslation
+pyflakes
+django-compressor

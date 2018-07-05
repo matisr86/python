@@ -1,0 +1,39 @@
+/*========================================
+				FOOTER
+==========================================*/
+
+.nav-footer {
+  display: table;
+  margin: 0 calc();
+}
+.nav-footer > ul {
+  display: inline-block;
+  width: 0;
+  margin-left: 50px;
+  vertical-align: top;
+}
+
+.nav-footer > ul {
+  padding-left: 30px;
+}
+
+.nav-footer > ul > li {
+  padding: 0 0;
+}
+
+footer {
+	padding: 0 0 0 0;
+}
+
+.top-scroll a {
+	text-decoration: none;
+	color: inherit;
+}
+
+i.scroll {
+	color: #666;
+}
+
+i.scroll:hover {
+	color: #fab818;
+}

@@ -1,0 +1,50 @@
+/*========================================
+				CAMERA-SLIDER
+==========================================*/
+
+.slide_main {
+  z-index:10; 
+  overflow:hidden;
+}
+
+#back_to_camera {
+  clear: both;
+  display: block;
+  height: 80px;
+  line-height: 40px;
+  padding: 20px;
+}
+
+.fluid_container {
+  margin: 0px auto;
+  max-width: 1150px;
+  width: 100%;
+  position: relative;
+}
+
+.camera_pag_ul{
+  z-index:100;
+  position:absolute;
+  top: 85%; 
+  left: 0; 
+  width: 100%;
+}
+
+.cameraContents { 
+  position: relative; 
+  height: 378px;
+  width: 100%; /* for IE 6 */
+}
+
+.camera_home_text {
+/*
+  border: 1px solid;
+  border-radius: 4px;
+  background:#dedede; 
+*/
+  position:absolute; 
+  top:5%; 
+  left:45%; 
+  padding:5px; 
+  width:50%
+}

@@ -1,0 +1,469 @@
+{% extends "pages/page.html" %}
+
+{% load pages_tags mezzanine_tags staticfiles i18n future %}
+
+{% block extra_css %}
+{{ block.super }}
+<style type="text/css">
+	#top{
+	width: 100%;
+	}
+
+	{% for banner in page.form.banner.all %}
+		{% if forloop.last %}
+			@media (min-width: 1371px) {
+				#top{
+					background: url({{ MEDIA_URL }}{{banner.bg}}) no-repeat;
+					background-position: top center;
+					background-attachment: fixed;
+					color: white;
+					height: 1000px;
+					margin: 0 auto;
+					overflow: hidden;
+					padding: 0;
+				}
+			}
+		{% elif forloop.first %}
+			@media (max-width: 1370px) {
+				#top{
+					background: url({{ MEDIA_URL }}{{banner.bg}}) no-repeat;
+					background-position: top center;
+					background-attachment: fixed;
+					color: white;
+					height: 980px;
+					margin: 0 auto;
+					overflow: hidden;
+					padding: 0;
+				}
+			}
+		{% endif %}
+	{% endfor %}
+	
+	{% for img in page.form.banner_img.all %}
+		{% if forloop.first %}
+			@media (min-width: 1130px) {
+				#top .bg{
+					background: url({{ MEDIA_URL }}{{img.img}}) no-repeat;
+					background-attachment: fixed;
+					height: 1300px;
+					margin: 0 auto;
+					padding: 100px 0 0 0;
+					position: absolute;
+					width: 1100px;
+					z-index: 201;
+				}
+		{% elif forloop.counter == 2 %}
+				#top .bg2{
+					background: url({{ MEDIA_URL }}{{img.img}}) no-repeat;
+					background-attachment: fixed;
+					height: 1300px;
+					margin: 0 auto;
+					padding: 100px 0 0 0;
+					position: absolute;
+					width: 1100px;
+					z-index: 200;
+				}
+			}
+		{% elif forloop.counter == 3 %}
+			@media (max-width: 1130px) {
+				#top .bg{
+					background: url({{ MEDIA_URL }}{{img.img}}) no-repeat;
+					background-attachment: fixed;
+					height: 900px;
+					margin: 0 auto;
+					padding: 100px 0 0 0;
+					position: absolute;
+					width: 990px;
+					z-index: 201;
+				}
+		{% elif forloop.counter == 4 %}
+				#top .bg2{
+					background: url({{ MEDIA_URL }}{{img.img}}) no-repeat;
+					background-attachment: fixed;
+					height: 900px;
+					margin: 0 auto;
+					padding: 100px 0 0 0;
+					position: absolute;
+					width: 990px;
+					z-index: 201;
+				}
+			}
+		{% elif forloop.counter == 5 %}
+			@media (max-width: 907px) {
+				#top .bg{
+					background: url({{ MEDIA_URL }}{{img.img}}) no-repeat;
+					background-attachment: fixed;
+					height: 900px;
+					margin: 0 auto;
+					padding: 100px 0 0 0;
+					position: absolute;
+					width: 800px;
+					z-index: 201;
+				}
+		{% elif forloop.counter == 6 %}
+				#top .bg2{
+					background: url({{ MEDIA_URL }}{{img.img}}) no-repeat;
+					background-attachment: fixed;
+					height: 900px;
+					margin: 0 auto;
+					padding: 100px 0 0 0;
+					position: absolute;
+					width: 900px;
+					z-index: 201;
+				}
+			}
+		{% elif forloop.counter == 7 %}
+			@media (max-width: 850px) {
+				#top .bg{
+					background: url({{ MEDIA_URL }}{{img.img}}) no-repeat;
+					background-attachment: fixed;
+					height: 700px;
+					margin: 0 auto;
+					padding: 100px 0 0 0;
+					position: absolute;
+					width: 700px;
+					z-index: 201;
+				}
+		{% elif forloop.counter == 8 %}
+				#top .bg2{
+					background: url({{ MEDIA_URL }}{{img.img}}) no-repeat;
+					background-attachment: fixed;
+					height: 700px;
+					margin: 0 auto;
+					padding: 100px 0 0 0;
+					position: absolute;
+					width: 700px;
+					z-index: 201;
+				}
+			}
+		{% elif forloop.counter == 9 %}
+			@media (max-width: 600px) {
+				#top .bg{
+					background: url({{ MEDIA_URL }}{{img.img}}) no-repeat;
+					background-attachment: fixed;
+					height: 500px;
+					margin: 0 auto;
+					padding: 100px 0 0 0;
+					position: absolute;
+					width: 500px;
+					z-index: 201;
+				}
+		{% elif forloop.counter == 10 %}
+				#top .bg2{
+					background: url({{ MEDIA_URL }}{{img.img}}) no-repeat;
+					background-attachment: fixed;
+					height: 500px;
+					margin: 0 auto;
+					padding: 100px 0 0 0;
+					position: absolute;
+					width: 500px;
+					z-index: 201;
+				}
+			}
+		{% endif %}
+			@media (max-width: 470px) {
+				#top .bg2{
+					display:none;
+				}
+				#top .bg{
+					display:none;
+				}
+			}
+	{% endfor %}
+	.story{
+		margin: 0 auto;
+		min-width: 980px;
+		overflow: auto;
+		width: 980px;
+	}
+
+	.story .float-left, .story .float-right{
+		padding: 200px 0 0 0;
+		position: relative;
+		width: 405px;
+	}
+
+	.story .float-right .line{
+		border-bottom: 3px solid #f99901;
+		position: sticky;
+		bottom: 27px;
+	}
+
+	.story .float-right:after {
+		content: "";
+		position: sticky;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-color: transparent;
+		border-bottom: 0;
+		bottom: -8px;
+		left: 80%;
+		border-top-color: #f99901;
+		border-width: 8px;
+	}
+</style>
+{% endblock %}
+
+{% block main %}
+{{ block.super }}
+	
+<div id="top">
+	<div class="story">
+		<h1 class="hidden">Lecimy po całości</h1>
+		<div class="bg"></div>
+		<div class="bg2"></div> 
+    	<div class="float-right">
+            {% for banner in page.form.banner.all %}
+				{% if forloop.first %}
+					{% if banner.about_heading or banner.about_desc %}
+						{% editable banner.about_heading banner.about_desc %}
+							<h1 class="c-white lh-1 dinpro">{{ banner.about_desc|richtext_filters|safe}}</h1>
+							<h2 class="c-white aleygreya">{{ banner.about_heading|safe}}</h2>
+						{% endeditable %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+			<div class="line"></div>
+        </div>
+    </div>
+</div> 
+	
+<div id="co_robimy">
+    <div class="arrow-down-main arrow-down-gray"></div>
+	<div class="container pt-40">
+		<div class="row">
+			
+			{% for wedo in page.form.what_do.all %}
+				<div class="col-sm-3 col-md-3 text-center">
+					<img src="{{ MEDIA_URL }}{% thumbnail wedo.img 0 90 %}" alt="wedo_{{forloop.counter}}">
+					
+					{% if wedo.title or wedo.description %}
+                    <div class="text-container">
+                        <div class="text-content short-text">
+							{% editable wedo.title wedo.description %}
+								<h3 class="c-teal">{{ wedo.title|safe}}</h3>
+								{{ wedo.description|richtext_filters|safe}}
+							{% endeditable %}
+                        </div>
+                        <div class="show-more"></div>
+                    </div>
+                    <div class="hidden">
+                        <div id="more">
+                            <p>{% trans 'More' %}</p>
+                        </div>
+                        <div id="less">
+                            <p>{% trans 'Less' %}</p>
+                        </div>
+                    </div>
+					{% endif %}
+					
+				</div>
+			{% endfor %}
+			
+		</div>
+		<div class="arrow-down arrow-down-gray"></div>
+	</div>
+</div>
+
+<div id="realizacje">
+	<div class="container pt-60 bb-gray pb-40">
+		<div class="row">
+            <div class="gallery">
+			
+			{% for realisation in page.form.realisations.all %}
+				{% if forloop.first %}
+				<div class="col-sm-6 col-md-6 text-center gallery-padd">
+                    <a rel="#image-{{ realisation.id }}" title="{% if realisation.title %}{{ realisation.title }}{% endif %}" href="{% if realisation.img.url %}{{ realisation.img.url }}{% endif %}">
+                        <img src="{{ MEDIA_URL }}{% thumbnail realisation.img 590 531 %}" alt="realisation_{{forloop.counter}}">
+                    </a>
+				</div>
+				{% elif forloop.counter == 3 %}
+				<div class="col-sm-4 col-md-4 text-center gallery-padd">
+                    <a rel="#image-{{ realisation.id }}" title="{% if realisation.title %}{{ realisation.title }}{% endif %}" href="{% if realisation.img.url %}{{ realisation.img.url }}{% endif %}">
+                        <img src="{{ MEDIA_URL }}{% thumbnail realisation.img 450 202 %}" alt="realisation_{{forloop.counter}}">
+                    </a>
+				</div>
+		    		{% elif forloop.counter == 13 %}
+                                <div class="col-sm-4 col-md-4 text-center gallery-padd" style="padding-bottom: 0!important;">
+                    <a rel="#image-{{ realisation.id }}" title="{% if realisation.title %}{{ realisation.title }}{% endif %}" href="{% if realisation.img.url %}{{ realisation.img.url }}{% endif %}">
+                        <img src="{{ MEDIA_URL }}{% thumbnail realisation.img 450 202 %}" alt="realisation_{{forloop.counter}}">
+                    </a>
+                                </div>
+				{% else %}
+				<div class="col-sm-2 col-md-2 text-center gallery-padd">
+                    <a rel="#image-{{ realisation.id }}" title="{% if realisation.title %}{{ realisation.title }}{% endif %}" href="{% if realisation.img.url %}{{ realisation.img.url }}{% endif %}">
+                        <img src="{{ MEDIA_URL }}{% thumbnail realisation.img 224 202 %}" alt="realisation_{{forloop.counter}}">
+                    </a>
+				</div>
+				{% endif %}
+			{% endfor %}
+            
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="o_nas">
+	<div class="container bb-gray pt-20 pb-40">
+		<div class="row">
+            <h2 class="c-orange pb-20">{% trans 'About us' %}</h2>
+            
+            {% for about in page.form.about.all %}
+                
+                {% if about.main_title %}
+                    {% editable about.main_title %}
+                        {{ about.main_title|richtext_filters|safe}}
+                    {% endeditable %}
+                {% endif %}
+                
+                <div class="col-sm-4 col-md-4 text-center pt-20">
+					<img src="{{ MEDIA_URL }}{% thumbnail about.img 0 58 %}" alt="about_{{forloop.counter}}">
+					
+					{% if about.title or about.description %}
+                        {% editable about.title about.description %}
+                            <h3 class="c-teal pb-20">{{ about.title|safe}}</h3>
+                            {{ about.description|richtext_filters|safe}}
+                        {% endeditable %}
+					{% endif %}
+					
+				</div>
+            {% endfor %}
+            
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+
+<footer id="kontakt">
+    <div class="container pt-20">
+        <div class="row">
+            <h2 class="c-orange pb-20">{% trans 'Contact with us' %}</h2>
+            <div class="col-sm-6 col-md-6 pl-0">
+                
+                {% for footer in page.form.footer.all %}
+                
+                    {% if footer.adress_content %}
+                        {% editable footer.adress_content %}
+                            {{ footer.adress_content|richtext_filters|safe}}
+                        {% endeditable %}
+                    {% endif %}
+                    
+                {% endfor %}
+                
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h4 class="mt-0">{% trans 'Contact form' %}</h4>
+                {% if request.GET.sent %}
+					<div class="col-md-12 col-sm-12 pb-sended-msg">
+						
+						{% if page.form.response %}
+							<h3 class="pt-20">
+							{% editable page.form.response %}
+							{{ page.form.response|richtext_filters|safe }}
+							{% endeditable %}
+							</h3>
+						{% endif %}
+						
+					</div>
+					<div class="col-md-12 col-sm-12 text-center pb-20 pt-20">
+					<a class="btn c-white b-orange" role="button" href="{{ page.get_absolute_url }}">
+						{% trans "Return" %} 
+					</a>
+				</div>
+				
+				{% else %}
+                    <div class="col-md-12 col-sm-12 pl-0 pr-0">
+                        <form class="mezzanine-form " method="post"{% if form.is_multipart %} enctype="multipart/form-data"{% endif %}>
+                            {% fields_for form %}
+                            <div class="form-actions text-right">
+								{% get_current_language as LANGUAGE_CODE %}
+                                <!--modeltrans error-->
+                                <button class="btn c-white b-orange" type="submit">{% if LANGUAGE_CODE == 'pl' %}{{ page.form.button_text_pl }}{% else %}{{ page.form.button_text_en }}{% endif %}</button>
+                            </div>
+                        </form>
+                    </div>
+				{% endif %}
+            </div>
+        </div>
+     </div>
+        
+	{% for map in page.form.footer.all %}
+		<img class="map" src="{{ MEDIA_URL }}{% thumbnail map.img 0 0 %}" alt="Contratempo_map">
+	{% endfor %}
+     
+     <div class="container">
+        <div class="row pt-20 pb-10">
+			<div class="col-md-12 col-sm-12 center">
+				<ul class="list-inline">
+					<li>
+						
+						{% for footer in page.form.footer.all %}
+							
+							{% if footer.copyright %}
+								{% editable footer.copyright %}
+									{{ footer.copyright|richtext_filters|safe}}
+								{% endeditable %}
+							{% endif %}
+							
+						{% endfor %}
+						
+					</li>
+					
+					{% for social in page.form.socials.all %}
+						{% if social.columns == '1' and social.header_social == True %}
+							<li>
+								<a href="{% if social.link %}{{ social.link }}{% endif %}" target="_blank">
+									<span class="rotate fa-stack fa-lg c-light-gray ">
+										<i class="fa fa-square-o fa-stack-2x"></i>
+										<i class="fa fa fa-facebook fa-stack-1x"></i>
+									</span></li>
+								</a>
+							</li>
+						{% endif %}
+						{% if social.columns == '2' and social.header_social == True %}
+							<li>
+								<a href="{% if social.link %}{{ social.link }}{% endif %}" target="_blank">
+									<i class="rotate fa fa-twitter fa-fw" ></i>
+								</a>
+							</li>
+						{% endif %}
+						{% if social.columns == '3' and social.header_social == True %}
+							<li>
+								<a href="{% if social.link %}{{ social.link }}{% endif %}" target="_blank">
+									<i class="rotate fa fa-pinterest fa-fw"></i>
+								</a>
+							</li>
+						{% endif %}
+						{% if social.columns == '4' and social.header_social == True %}
+							<li>
+								<a href="{% if social.link %}{{ social.link }}{% endif %}" target="_blank">
+									<i class="rotate fa fa-instagram fa-fw"></i>
+								</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				
+				</ul>
+			</div>
+        </div>
+    </div>
+</footer>		
+{% endblock %}
+
+{% block extra_js %}
+{{ block.super }}
+	<script type="text/javascript">
+	$(document).ready(function(){		
+		$('#top').parallax("50%", "0", 0.3);
+		$('.bg').parallax("50%", "60", 0.4);
+		$('.bg2').parallax("50%", "60", 0.7);
+	})
+	</script>
+    <script>$(function() {$('.mezzanine-form :input:visible:enabled:first').focus();});</script>
+    <script src="{% static 'js/project/animations.js' %}"></script>
+    
+{% endblock %}
